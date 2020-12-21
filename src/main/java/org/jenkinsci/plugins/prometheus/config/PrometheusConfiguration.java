@@ -31,7 +31,7 @@ public class PrometheusConfiguration extends GlobalConfiguration {
     private static final String PROMETHEUS_ENDPOINT = "PROMETHEUS_ENDPOINT";
     private static final String DEFAULT_ENDPOINT = "prometheus";
     static final String COLLECTING_METRICS_PERIOD_IN_SECONDS = "COLLECTING_METRICS_PERIOD_IN_SECONDS";
-    static final long DEFAULT_COLLECTING_METRICS_PERIOD_IN_SECONDS = TimeUnit.MINUTES.toSeconds(2);
+    static final long DEFAULT_COLLECTING_METRICS_PERIOD_IN_SECONDS = TimeUnit.SECONDS.toSeconds(30);
 
     private String urlName = null;
     private String additionalPath;
